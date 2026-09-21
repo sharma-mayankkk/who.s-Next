@@ -9,11 +9,9 @@ export default function services() {
         {/* Nested routing*/}
         <Link href={"/services/web-dev"}>Web development service</Link>
       </p>
+      
       <p>
         <Link href={"/services/app-dev"}>App development</Link>
-      </p>
-      <p>
-        <Link href={"ui-ux-development"}>Web development</Link>
       </p>
     
       <Link href={"/"}>home</Link>
