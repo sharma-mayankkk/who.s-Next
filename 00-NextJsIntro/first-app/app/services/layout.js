@@ -5,5 +5,5 @@ export default function ServicesLayout({ children }) {
       <h3>Services Layout</h3>
       {children}
     </section>
-  );
+  ); 
 }
