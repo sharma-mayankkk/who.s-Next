@@ -1,3 +1,6 @@
+export const metadata = {
+  title: "Blogs" 
+}
 
 function page() {
   return (
