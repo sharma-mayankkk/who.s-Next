@@ -1,5 +1,23 @@
 import Link from "next/link";
 
+//static site generation: “Pre-building pages at build time, including pages generated from dynamic data.”
+
+export async function generateStaticParams() {
+    //hardcoded method to do that 
+    // return [
+    //     { blogID: '1' },
+    //     { blogID: '2' },
+    //     { blogID: '3' },
+    //     { blogID: '4' },
+    //     { blogID: '5' },
+    // ]
+
+    //dynamic method by fetching api
+    const response = await fetch('https://jsonplaceholder.typicode.com/todos')
+    const data = await response.json();
+    return data.map(({ id }) => ({ blogID: id.toString() }))
+}
+
 const Blogs = async ({ params }) => {
     const { blogID } = await params;
     console.log(blogID);
