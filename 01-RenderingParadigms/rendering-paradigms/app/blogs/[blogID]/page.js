@@ -1,5 +1,10 @@
 import Link from "next/link";
 
+//dynamicParams = false: It tells Next.js to only allow the dynamic routes returned by generateStaticParams(); any other dynamic route returns a 404.
+
+export const dynamicParams = false;
+
+
 //static site generation: “Pre-building pages at build time, including pages generated from dynamic data.”
 
 export async function generateStaticParams() {
