@@ -5,6 +5,10 @@ const Blog = async ({ params }) => {
   //   return 'Blog ID can only be a odd number'
   // }
 
+  const randomNumber = Math.random()
+  console.log(randomNumber)
+
+  if (randomNumber > 0.5) throw new Error("Error Occurred")
   return (
     <>
       <div>
