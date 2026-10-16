@@ -1,0 +1,13 @@
+/* body{
+    background-color: maroon;
+} */ 
+
+/* to prevent applying from everywhere we need to put classes */
+
+.blogId {
+    /* nesting */
+    .title{ 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+}
