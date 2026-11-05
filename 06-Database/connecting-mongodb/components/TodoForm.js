@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { PlusIcon } from 'lucide-react';
-
+ 
 const TodoForm = ({ addTodo }) => {
   const [input, setInput] = useState('');
 
