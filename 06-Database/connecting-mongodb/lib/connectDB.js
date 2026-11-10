@@ -9,7 +9,7 @@ export const connectDB = async () => {
         }
         await mongoose.connect(DB_URI, {
             dbName: 'todoApp'
-        })
+        }) 
         mongoose.connection.readyState
         console.log("DB connected !!!")
 
