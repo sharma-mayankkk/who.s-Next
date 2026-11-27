@@ -25,7 +25,7 @@ export default function Home() {
     const response = await fetch('/todos', {
       method: "POST",
       body: JSON.stringify({ text })
-    })
+    }) 
 
     const newTodo = await response.json()
 
